@@ -1,23 +1,60 @@
+
 body{
-    background-color: beige
+    background-color: rgb(193, 201, 242)
 }
 /*Menue*/
-
+#content {
+    max-width: 1400px;
+    background-color: rgb(224, 229, 255);
+    margin: 0 auto
+}
 nav {
     background-color: lightblue
 }
 #primary {
-    background-color: red;
+    background-color: rgb(147, 186, 230);
 }
-a{
+a {
     background-color: lightblue;
     color: rgb(71, 68, 69); /*text color*/
     text-decoration: none; /*removes underlines*/
     padding: 10px;
     margin: 5px;
 }
+
+a:hover{
+    background-color: rgb(192, 255, 235);
+    color: rgb(94, 0, 0)
+}
+nav{
+    display: flex
+}
 /*Main Section of Page*/
 
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+p {
+    width: 40%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+}
+
 .background{
-    background-color: lightpink;
+    background-color: rgb(176, 206, 240);
+}
+footer {
+    background-color: lightblue;
+    color: rgb(71, 68, 69);
+    width: 40%;
+    text-align: center;
+    margin: 10px auto
 }
