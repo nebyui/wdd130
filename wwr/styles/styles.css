@@ -250,6 +250,37 @@ footer .social img {
     padding-top: 15px;
 }
 
+/* Start of FAQ CSS */
+
+#faq-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#faq_image {
+    grid-column: 3/9;
+    width: 100%;
+    margin: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.questions {
+    grid-column: 2/11;
+    font-family: "Knewave", courier, sans-serif;
+    background-color: var(--secondary-color);
+    text-align: center;
+    border-radius: 25px;
+}
+
+.answers {
+    grid-column: 2/11;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
