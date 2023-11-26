@@ -257,8 +257,8 @@ footer .social img {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-#faq_image {
-    grid-column: 3/9;
+.faq_image {
+    grid-column: 3/11;
     width: 100%;
     margin: 50px;
     border-radius: 25px;
@@ -271,6 +271,7 @@ footer .social img {
     background-color: var(--secondary-color);
     text-align: center;
     border-radius: 25px;
+    letter-spacing: 3px;
 }
 
 .answers {
