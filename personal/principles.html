@@ -94,14 +94,71 @@
                 Composition is the way all of the principles and elements are combined and organized in the completed image.
                 Thinking about composition means thinking about where the viewer's eye is guided, the balance and harmony of the different elements,
                 how to convey the the message or intent of the piece, etc. Composition has its own set of principles.
-                <br>Balance: The visual balance of the piece. This is how the components are distributed in the piece. There are different kinds of balance, such as symmetrical and asymmetrical.
-                <br>Rhythm: The visual movement or flow of the piece. This can lead the viewers eye or add a sense of motion.
-                <br>Emphasis: Establishing the focal point or making certain components stand out against others. Contrast, scale, and placement within the image is important with this and helps with communicating the main message of the piece.
-                <br>Contrast: The level of variation in colors, values. and textures. Contrast helps with making components stand out or to help convey the meaning of the piece. 
-                <br>Proportion: Maintaining the proper sizes and proportions of the objects in the piece. Perspective plays a significant role in this and it is good to make sure the preportions appear accurate. 
-                <br>Unity: The sense of togetherness that the different components create. Good unity means that the components and elements work together rather than appearing random and disjointed
-                <br>Repetition: the repeated use of a certain component or element. This can be used to create the rhythm, movement, and/or unity, or to simply make a pattern. 
             </p>
+            <div id="accordion_section">
+                <button class="accordion">Balance</button>
+                <div class="panel">
+                <p>The visual balance of the piece. This is how the components are distributed in the piece. There are different kinds of balance, such as symmetrical and asymmetrical.</p>
+                </div>
+                
+                <button class="accordion">Rhythm</button>
+                <div class="panel">
+                <p>
+                    The visual movement or flow of the piece. This can lead the viewers eye or add a sense of motion.
+                </p>
+                </div>
+                
+                <button class="accordion">Emphasis</button>
+                <div class="panel">
+                <p>
+                    Establishing the focal point or making certain components stand out against others. Contrast, scale, and placement within the image is important with this and helps with communicating the main message of the piece.
+                </p>
+                </div>
+                
+                <button class="accordion">Contrast</button>
+                <div class="panel">
+                <p>
+                    The level of variation in colors, values. and textures. Contrast helps with making components stand out or to help convey the meaning of the piece. 
+                </p>
+                </div>
+                
+                <button class="accordion">Proportion</button>
+                <div class="panel">
+                <p>
+                    Maintaining the proper sizes and proportions of the objects in the piece. Perspective plays a significant role in this and it is good to make sure the preportions appear accurate.
+                </p>
+                </div>
+                
+                <button class="accordion">Unity</button>
+                <div class="panel">
+                <p>
+                    The sense of togetherness that the different components create. Good unity means that the components and elements work together rather than appearing random and disjointed
+                </p>
+                </div>
+                
+                <button class="accordion">Repetition</button>
+                <div class="panel">
+                <p>
+                    The repeated use of a certain component or element. This can be used to create the rhythm, movement, and/or unity, or to simply make a pattern.
+                </p>
+                </div>
+            </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+                }
+            </script> 
         </section>
         
     </main>
